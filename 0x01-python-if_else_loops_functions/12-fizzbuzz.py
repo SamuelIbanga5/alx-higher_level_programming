@@ -5,7 +5,7 @@ def fizzbuzz():
             print("FizzBuzz", end=" ")
         elif num % 5 == 0:
             print("Buzz", end=" ")
-        elif num % 3 == 0 :
+        elif num % 3 == 0:
             print("Fizz", end=" ")
         else:
             print("{}".format(num), end=" ")
