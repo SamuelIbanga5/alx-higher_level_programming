@@ -6,4 +6,7 @@ def safe_print_list(my_list=[], x=0):
         except IndexError:
             break
     print("\n", end="")
-    return len(my_list)
+    if x <= len(my_list):
+        return x
+    else:
+        return len(my_list)
