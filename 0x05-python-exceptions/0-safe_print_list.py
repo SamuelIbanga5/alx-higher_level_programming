@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+def _len(iterable):
+    if hasattr(iterable, "__iter__"):
+        count = 0
+        for i in iterable:
+            count += 1
+        return count
+    else:
+        return
+
 def safe_print_list(my_list=[], x=0):
     for index in range(x):
         try:
@@ -6,7 +15,7 @@ def safe_print_list(my_list=[], x=0):
         except IndexError:
             break
     print("\n", end="")
-    if x <= len(my_list):
+    if x <= _len(my_list):
         return x
     else:
-        return len(my_list)
+        return _len(my_list)
