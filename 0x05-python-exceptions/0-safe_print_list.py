@@ -14,7 +14,7 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[index]), end="")
         except IndexError:
             break
-    print("\n", end="")
+    print("")
     if x <= _len(my_list):
         return x
     else:
