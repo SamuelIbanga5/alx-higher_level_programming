@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""My third python class (Square)"""
 class Square:
 
     """A Square class for creating squares."""
