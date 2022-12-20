@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-
+"""My first python class(Square)"""
 class Square:
     """An empty Square class."""
     pass
