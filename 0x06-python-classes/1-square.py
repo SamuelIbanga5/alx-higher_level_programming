@@ -2,14 +2,15 @@
 """My second python class (Square)"""
 class Square:
     """Square class for creating squares with different sizes"""
+
     def __init__(self, size):
-        """__init__ method is called automatically to instantiate
-        a class to a object.
+        """__init__ method for initializing a class.
 
         Args:
             size (int): Specifies the size of square.
+
         """
-        self.size = size
+        self.__size = size
 
 
 if __name__ == '__main__':
