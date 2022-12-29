@@ -35,8 +35,6 @@ def matrix_divided(matrix, div):
     return new_matrix
 
 if __name__ == "__main__":
-    matrix_divided = __import__('2-matrix_divided').matrix_divided
-
     matrix = [
         [1, 2, 3],
         [4, 5, 6]

@@ -19,8 +19,7 @@ def add_integer(a, b=98):
     return sum
 
 if __name__ == "__main__":
-    add_integer = __import__('0-add_integer').add_integer
-
+   
     print(add_integer(1, 2))
     print(add_integer(100, -2))
     print(add_integer(2))
