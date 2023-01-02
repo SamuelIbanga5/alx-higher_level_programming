@@ -6,9 +6,9 @@ Contains class Rectangle
 Empty class declaration
 """
 class Rectangle():
-
-
     """Rectangle class that creates rectangles of different sizes."""
+
+
     pass
 
 
