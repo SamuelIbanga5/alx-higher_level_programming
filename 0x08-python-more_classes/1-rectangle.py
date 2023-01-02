@@ -23,14 +23,14 @@ class Rectangle:
     @property
     def width(self):
         """
-        width getter method for retrieving width or rectangle.
+        Getter method for retrieving width or rectangle.
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        width setter method for setting new value of width attribute.
+        Setter method for setting new value of width attribute.
 
         Args:
             value (int): New value of width.
@@ -49,14 +49,14 @@ class Rectangle:
     @property
     def height(self):
         """
-        height getter method for retrieving height of rectangle.
+        Getter method for retrieving height of rectangle.
         """
         return self.__height
 
     @height.setter
     def height(self, value):
         """
-        height setter method for setting new value of height attribute.
+        Setter method for setting new value of height attribute.
 
         Args:
             value (int): New value of height attribute.
