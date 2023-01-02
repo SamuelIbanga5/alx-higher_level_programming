@@ -6,12 +6,12 @@ Contains class Rectangle
 Creates a rectangle object.
 """
 class Rectangle:
-
-    number_of_instances = 0
-
     """
     Defines a rectangle with attributes
     """
+
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
         __init__ method for initializing Rectangle class.
