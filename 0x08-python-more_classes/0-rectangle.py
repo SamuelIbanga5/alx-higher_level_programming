@@ -5,7 +5,11 @@ Module 0-rectangle
 Contains class Rectangle
 Empty class declaration
 """
+
+
 class Rectangle():
+
+
     """Rectangle class that creates rectangles of different sizes."""
 
 
