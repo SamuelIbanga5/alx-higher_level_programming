@@ -131,12 +131,12 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """
-        square method for creating new Rectangle instance.
+        square method for creating new Rectangle instance and returns new instance of rectangle.
 
         Args:
             size (int): Size of width and height of square.
         """
-        square = Rectangle(size, size)
+        square = cls(size, size)
         return square
 
 if __name__ == "__main__":
