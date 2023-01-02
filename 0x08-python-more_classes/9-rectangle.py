@@ -136,8 +136,7 @@ class Rectangle:
         Args:
             size (int): Size of width and height of square.
         """
-        square = cls(size, size)
-        return square
+        return cls(size, size)
 
 if __name__ == "__main__":
     my_square = Rectangle.square(5)
