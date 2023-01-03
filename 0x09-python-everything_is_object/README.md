@@ -49,3 +49,6 @@ This project is a little bit different than the usual projects. It will help to 
 - [x] [Task 21](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/21-answer.txt)
 > Check for type tuple.
 - [x] [Task 22](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/22-answer.txt)
+> Check for type tuple.
+- [x] [Task 23](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/23-answer.txt)
+> Check for type tuple.
