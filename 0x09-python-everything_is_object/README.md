@@ -52,3 +52,5 @@ This project is a little bit different than the usual projects. It will help to 
 > Check for type tuple.
 - [x] [Task 23](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/23-answer.txt)
 > Check for type tuple.
+- [x] [Task 24](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/24-answer.txt)
+> Checking for same tuple object.
