@@ -56,3 +56,6 @@ This project is a little bit different than the usual projects. It will help to 
 > Checking for same tuple object.
 - [x] [Task 25](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/25-answer.txt)
 > Checking for tuple equality.
+- [x] [Task 26](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/26-answer.txt)
+> Checking for tuple equality.
+
