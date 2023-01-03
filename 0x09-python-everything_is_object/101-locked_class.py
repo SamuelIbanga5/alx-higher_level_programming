@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """Python code that defines a class named LockedClass"""
-
-
 class LockedClass:
     """
     LockedClass prevents the user from dynamically creating new
