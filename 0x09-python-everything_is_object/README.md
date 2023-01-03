@@ -18,3 +18,5 @@ This project is a little bit different than the usual projects. It will help to 
 > Does **a** and **b** point to the same object?
 - [x] [Task 6](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/6-answer.txt)
 > Check if statement is True or False
+- [x] [Task 7](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/7-answer.txt)
+> Check if statement is True or False
