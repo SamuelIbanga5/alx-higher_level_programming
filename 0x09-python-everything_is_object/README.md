@@ -26,3 +26,5 @@ This project is a little bit different than the usual projects. It will help to 
 > Check if statement is True or False
 - [x] [Task 10](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/10-answer.txt)
 > Check if statement is True or False
+- [x] [Task 11](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/11-answer.txt)
+> Check if statement is True or False
