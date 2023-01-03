@@ -14,3 +14,5 @@ This project is a little bit different than the usual projects. It will help to 
 > Does **a** and **b** point to the same object?
 - [x] [Task 4](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/4-answer.txt)
 > Does **a** and **b** point to the same object?
+- [x] [Task 5](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/5-answer.txt)
+> Does **a** and **b** point to the same object?
