@@ -38,3 +38,6 @@ This project is a little bit different than the usual projects. It will help to 
 > Printing result after adding list
 - [x] [Task 16](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/16-answer.txt)
 > Printing result after incrementing
+- [x] [Task 17](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/17-answer.txt)
+> Printing result after appending to list
+
