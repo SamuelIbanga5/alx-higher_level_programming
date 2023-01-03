@@ -42,3 +42,5 @@ This project is a little bit different than the usual projects. It will help to 
 > Printing result after appending to list
 - [x] [Task 18](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/18-answer.txt)
 > Printing result after assignation.
+- [x] [Task 19](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/19-copy_list.py)
+> Function that returns copy of a list.
