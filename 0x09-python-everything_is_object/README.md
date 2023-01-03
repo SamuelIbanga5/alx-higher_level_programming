@@ -58,4 +58,5 @@ This project is a little bit different than the usual projects. It will help to 
 > Checking for tuple equality.
 - [x] [Task 26](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/26-answer.txt)
 > Checking for tuple equality.
-
+- [x] [Task 27](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/27-answer.txt)
+> Checking for memory equality.
