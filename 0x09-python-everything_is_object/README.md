@@ -64,3 +64,6 @@ This project is a little bit different than the usual projects. It will help to 
 > Checked for memory equality
 - [x] [Task 29](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/100-magic_string.py)
 > Python script to print string **BestSchool**.
+- [x] [Task 30](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/101-locked_class.py)
+> LockedClass that prevents users from creating objects with attributes
+
