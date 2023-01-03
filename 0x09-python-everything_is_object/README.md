@@ -34,3 +34,6 @@ This project is a little bit different than the usual projects. It will help to 
 > Check if statement is True or False
 - [x] [Task 14](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/14-answer.txt)
 > Printing result after appending
+- [x] [Task 15](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/15-answer.txt)
+> Printing result after adding list
+
