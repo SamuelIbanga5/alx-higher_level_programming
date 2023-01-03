@@ -6,3 +6,5 @@ This project is a little bit different than the usual projects. It will help to 
 
 - [x] [Task 0](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/0-answer.txt)
 > Name of function used to print the type of an object.
+- [x] [Task 1](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/1-answer.txt)
+> Name of function used to get the variable identifier.
