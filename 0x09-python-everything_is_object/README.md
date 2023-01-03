@@ -66,4 +66,8 @@ This project is a little bit different than the usual projects. It will help to 
 > Python script to print string **BestSchool**.
 - [x] [Task 30](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/101-locked_class.py)
 > LockedClass that prevents users from creating objects with attributes
+- [x] [Task 31](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/103-line1.txt)
+> Checking number of lines executed
+- [x] [Task 31b](https://github.com/SamuelIbanga5/alx-higher_level_programming/blob/main/0x09-python-everything_is_object/103-line2.txt)
+> Checking number o lines executed
 
