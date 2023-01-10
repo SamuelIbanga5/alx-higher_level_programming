@@ -42,5 +42,4 @@ def parse_stdin_and_compute():
 
     print_size_and_codes(size, stat_codes)
 
-
 parse_stdin_and_compute()
