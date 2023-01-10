@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 10-student
+Module 11-student
 Contains class Student
 that initializes public instance attributes first_name, last_name, and age,
 and has public method to_json that returns dictionary representation
@@ -42,3 +42,11 @@ class Student():
                 if att in self.__dict__.keys():
                     dic[att] = self.__dict__[att]
             return dic
+
+    def reload_from_json(self, json):
+        """
+        Return:
+            Transfer all attributes of json to self
+        """
+        for k, v in json.items():
+            setattr(self, k, v)
