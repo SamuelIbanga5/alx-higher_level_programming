@@ -12,6 +12,8 @@ Saves to CSV and loads from CSV file
 
 
 import json
+import csv
+import turtle
 class Base:
     """
     defines class Base
@@ -88,3 +90,82 @@ class Base:
         except:
             pass
         return list_instance
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """save_to_file_csv class method that serializes in CSV"""
+        fileName = "{}.csv".format(cls.__name__)
+        with open(fileName, "w", newline="") as file:
+            writer = csv.writer(file)
+            for objs in list_objs:
+                if cls.__name__ == "Rectangle":
+                    writer.writerow([objs.id, objs.width, objs.height, objs.x, objs.y])
+                if cls.__name__ == "Square":
+                    writer.writerow([objs.id, objs.width, objs.x, objs.y])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """load_from_file_csv class method that deserializes in CSV"""
+        objs = []
+        fileName = "{}.csv".format(cls.__name__)
+        with open(fileName, "r", newline="") as file:
+            reader = csv.reader(file)
+            for row in reader:
+                if cls.__name__ == "Rectangle":
+                    dic = {
+                            "id": int(row[0]),
+                            "width": int(row[1]),
+                            "height": int(row[2]),
+                            "x": int(row[3]),
+                            "y": int(row[4])
+                        }
+                if cls.__name__ == "Square":
+                    dic = {
+                            "id": int(row[0]),
+                            "size": int(row[1]),
+                            "x": int(row[2]),
+                            "y": int(row[3])
+                        }
+                o = cls.create(**dic)
+                objs.append(o)
+        return objs
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """Draw Rectangles and Squares using the turtle module.
+        Args:
+            list_rectangles (list): A list of Rectangle objects to draw.
+            list_squares (list): A list of Square objects to draw.
+        """
+        turt = turtle.Turtle()
+        turt.screen.bgcolor("#b7312c")
+        turt.pensize(3)
+        turt.shape("turtle")
+
+        turt.color("#ffffff")
+        for rect in list_rectangles:
+            turt.showturtle()
+            turt.up()
+            turt.goto(rect.x, rect.y)
+            turt.down()
+            for i in range(2):
+                turt.forward(rect.width)
+                turt.left(90)
+                turt.forward(rect.height)
+                turt.left(90)
+            turt.hideturtle()
+
+        turt.color("#b5e3d8")
+        for sq in list_squares:
+            turt.showturtle()
+            turt.up()
+            turt.goto(sq.x, sq.y)
+            turt.down()
+            for i in range(2):
+                turt.forward(sq.width)
+                turt.left(90)
+                turt.forward(sq.height)
+                turt.left(90)
+            turt.hideturtle()
+
+        turtle.exitonclick()
