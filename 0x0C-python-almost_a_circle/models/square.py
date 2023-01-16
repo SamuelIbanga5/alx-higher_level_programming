@@ -77,3 +77,12 @@ class Square(Rectangle):
                     self.x = args[2]
                 if i == 3:
                     self.y = args[3]
+
+    def to_dictionary(self):
+        """to_dictionary public method that returns the dictionary representation of a Square"""
+        square_dict = {}
+        square_dict["id"] = self.id
+        square_dict["x"] = self.x
+        square_dict["size"] = self.size
+        square_dict["y"] = self.y
+        return square_dict
