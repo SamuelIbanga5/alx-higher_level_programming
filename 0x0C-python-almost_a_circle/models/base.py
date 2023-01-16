@@ -53,6 +53,14 @@ class Base:
             for o in list_objs:
                 objs.append(o.to_dictionary())
 
-        with open(fileName, "w") as f:
+            with open(fileName, "w") as f:
                 f.write(cls.to_json_string(objs))
                 f.close()
+
+    @staticmethod
+    def from_json_string(json_string):
+        """from_json_string static method that returns the list of the JSON string representation of json_string"""
+        if json_string is None or json_string == []:
+            return []
+        else:
+            return json.loads(json_string)
