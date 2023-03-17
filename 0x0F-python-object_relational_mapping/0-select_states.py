@@ -6,16 +6,14 @@
 import sys
 import MySQLdb
 args = sys.argv
-mysql_username = args[1]
-mysql_password = args[2]
-database_name = args[3]
-try:
-    db = MySQLdb.connect(user=mysql_username, passwd=mysql_password, db=database_name)
-except:
-    print('Cannot connect to database')
+user = args[1]
+passwd = args[2]
+dbname = args[3]
+
+db = MySQLdb.connect(user=user, passwd=passwd, db=dbname)
 
 cur = db.cursor()
-cur.execute(f"SELECT * FROM {database_name}.states")
+cur.execute(f"SELECT * FROM {dbname}.states")
 rows = cur.fetchall()
 for row in rows:
     print(row)
