@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-# Script that takes in arguments and displays all values\
-# in the states table of hbtn_0e_0_usa where name matches\
-# the argument. But tis time a script that is safe from MySQL injections.
-# Usage: ./3-my_safe_filter_states.py <mysql username> \
-#                                     <mysql password> \
-#                                     <database_name> \
-#                                     <state name searched>
+"""
+Script that takes in arguments and displays all values\
+in the states table of hbtn_0e_0_usa where name matches\
+the argument. But tis time a script that is safe from MySQL injections.
+Usage: ./3-my_safe_filter_states.py <mysql username> \
+                                    <mysql password> \
+                                    <database_name> \
+                                    <state name searched>
+"""
 import sys
 import MySQLdb
 
