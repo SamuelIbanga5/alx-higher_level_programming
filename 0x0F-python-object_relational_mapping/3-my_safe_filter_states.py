@@ -19,8 +19,8 @@ if __name__ == "__main__":
     state_name = args[4]
     db = MySQLdb.connect(user=user, passwd=passwd, db=dbname)
     cur = db.cursor()
-    cur.execute(f"SELECT * FROM {dbname}.states WHERE\
-            (name = '@{state_name}')")
+    cur.execute(f"SELECT * FROM {dbname}.states")
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        if row[1] == state_name:
+            print(row)
