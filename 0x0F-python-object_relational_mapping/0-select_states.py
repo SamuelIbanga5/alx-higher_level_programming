@@ -15,7 +15,7 @@ except:
     print('Cannot connect to database')
 
 cur = db.cursor()
-cur.execute("SELECT * FROM hbtn_0e_0_usa.states")
+cur.execute(f"SELECT * FROM {database_name}.states")
 rows = cur.fetchall()
 for row in rows:
     print(row)
