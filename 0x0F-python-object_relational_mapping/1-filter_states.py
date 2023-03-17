@@ -6,16 +6,15 @@
 #                             <database name>
 import sys
 import MySQLdb
-args = sys.argv
-mysql_username = args[1]
-mysql_password = args[2]
-database_name = args[3]
-try:
-    db = MySQLdb.connect(user=mysql_username, passwd=mysql_password, db=database_name)
-except:
-    print('Database cannot connect...')
-cur = db.cursor()
-cur.execute(f"SELECT * FROM {database_name}.states WHERE name LIKE 'N%'")
-rows = cur.fetchall()
-for row in rows:
-    print(row)
+
+if __name__ == "__main__":
+    args = sys.argv
+    user = args[1]
+    passwd = args[2]
+    dbname = args[3]
+    db = MySQLdb.connect(user=user, passwd=passwd, db=dbname)
+    cur = db.cursor()
+    cur.execute(f"SELECT * FROM {dbname}.states WHERE name LIKE 'N%'")
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
