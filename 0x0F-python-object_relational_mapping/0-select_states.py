@@ -5,15 +5,15 @@
 #                             <database name>
 import sys
 import MySQLdb
-args = sys.argv
-user = args[1]
-passwd = args[2]
-dbname = args[3]
 
-db = MySQLdb.connect(user=user, passwd=passwd, db=dbname)
-
-cur = db.cursor()
-cur.execute(f"SELECT * FROM {dbname}.states")
-rows = cur.fetchall()
-for row in rows:
-    print(row)
+if __name__ == "__main__":
+    args = sys.argv
+    user = args[1]
+    passwd = args[2]
+    dbname = args[3]
+    db = MySQLdb.connect(user=user, passwd=passwd, db=dbname)
+    cur = db.cursor()
+    cur.execute(f"SELECT * FROM {dbname}.states")
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
