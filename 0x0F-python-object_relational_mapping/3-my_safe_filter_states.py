@@ -6,17 +6,16 @@
 #                                     <state name searched>
 import sys
 import MySQLdb
-args = sys.argv
-mysql_username = args[1]
-mysql_password = args[2]
-database_name = args[3]
-state_name = args[4]
-try:
-    db = MySQLdb.connect(user=mysql_username, passwd=mysql_password, db=database_name)
-except:
-    print('Database not connected...')
-cur = db.cursor()
-cur.execute(f"SELECT * FROM {database_name}.states WHERE (name = '@{state_name}')")
-rows = cur.fetchall()
-for row in rows:
-    print(row)
+
+if __name__ == "__main__":
+    args = sys.argv
+    user = args[1]
+    passwd = args[2]
+    dbname = args[3]
+    state_name = args[4]
+    db = MySQLdb.connect(user=user, passwd=passwd, db=dbname)
+    cur = db.cursor()
+    cur.execute(f"SELECT * FROM {dbname}.states WHERE (name = '@{state_name}')")
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
