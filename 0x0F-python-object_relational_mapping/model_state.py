@@ -23,16 +23,3 @@ if __name__ == "__main__":
                 unique=True
             )
         name = Column(String(128), nullable=False)
-
-    engine = create_engine(
-            'mysql+mysqldb://{}:{}@localhost/{}'.format(
-                'Ibangajnr',
-                'software',
-                'hbtn_0e_6_usa'), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
-
-    Session = sessionmaker(bind=engine)
-    session = Session()
-    for state in session.query(State).order_by(State.id).all():
-        print("{}: {}".format(state.id, state.name))
-    session.close()
