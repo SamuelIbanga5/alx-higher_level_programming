@@ -5,8 +5,8 @@ Inherits from SQLAlchemy Base and links to the MySQL table states.
 """
 from sqlalchemy import Column, String, Integer, create_engine
 from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
+from sqlalchemy.orm import relationship
+from relationship_city import Base, City
 
 
 class State(Base):
@@ -17,7 +17,7 @@ class State(Base):
     id (sqlalchemy.Integer): The state's id.
     name = (sqlalchemy.String): The state's name.
     """
-    __tablename__ = 'states'
+    __tablename__ = "states"
     id = Column(
             Integer,
             primary_key=True,
@@ -26,3 +26,5 @@ class State(Base):
             unique=True
         )
     name = Column(String(128), nullable=False)
+
+    cities = relationship("City", backref="state", cascade="all, delete")
